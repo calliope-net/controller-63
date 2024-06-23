@@ -14,13 +14,13 @@ input.onButtonEvent(Button.B, input.buttonEventClick(), function () {
     pins.servoWritePin(AnalogPin.C8, iServo)
 })
 function _ (Kommentar: string) {
-    t = [
+    return [
     "calliope-net/controller-63",
     "C9 Relais schaltet 9V Akku an/aus",
     "C13 C15 Spursensor 9V Pegelwandler",
-    "C8 Servo 5V",
-    "C12 Licht",
-    "C14 Encoder Eingang"
+    "C8 Grove 5V Servo",
+    "C12 Grove 5V Licht oder Buzzer",
+    "C14 Encoder Eingang zählt Impulse"
     ]
 }
 pins.onPulsed(DigitalPin.C14, PulseValue.Low, function () {
@@ -31,7 +31,6 @@ pins.onPulsed(DigitalPin.C14, PulseValue.Low, function () {
     }
 })
 let iEncoder = 0
-let t: string[] = []
 let iMotor = 0
 let iServo = 0
 pins.digitalWritePin(DigitalPin.C9, 1)
