@@ -13,3 +13,10 @@
 
 ![](DSC00262_1024.JPG)
 
+
+#### Blocks preview ![Build status badge](https://github.com/calliope-net/controller-63/workflows/MakeCode/badge.svg)
+
+This image shows the blocks code from the last commit in master.
+This image may take a few minutes to refresh.
+
+![A rendered view of the blocks](https://github.com/calliope-net/controller-63/raw/master/.github/makecode/blocks.png)
