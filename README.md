@@ -3,6 +3,8 @@
 
 ![](DSC00264_1024.JPG)
 
+![](mini-Screenshot_1024.png)
+
 ![](DSC00268_1024.JPG)
 
 ![](DSC00274_1024.JPG)
