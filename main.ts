@@ -44,11 +44,17 @@ loops.everyInterval(500, function () {
         basic.setLedColors(0x000000, 0x00ff00, 0x00ff00)
         motor(0)
     }
+    o4digit.show(input.lightLevel())
     if (iEncoder >= 0) {
         o4digit.show(iEncoder)
         o4digit.point(false)
     } else {
         o4digit.show(Math.abs(iEncoder))
         o4digit.point(true)
+    }
+    if (input.lightLevel() < 50) {
+        pins.digitalWritePin(DigitalPin.C12, 0)
+    } else if (input.lightLevel() > 100) {
+        pins.digitalWritePin(DigitalPin.C12, 1)
     }
 })
